@@ -142,13 +142,13 @@ products.get("/seed/newproducts/viaseedfile", (req, res) => {
 //___________________
 //Mistakes happen! Drop Database - Vist ONCE to drop your database. WARNING! YOU CANNOT UNDO THIS!
 //___________________
-// products.get(
-//   "/dropdatabase/cannotundo/areyoursure/reallysure/okthen",
-//   (req, res) => {
-//     Product.collection.drop();
-//     res.send("You did it! You dropped the database!");
-//   }
-// );
+products.get(
+  "/dropdatabase/cannotundo/areyoursure/reallysure/okthen",
+  (req, res) => {
+    Product.collection.drop();
+    res.send("You did it! You dropped the database!");
+  }
+);
 
 //___________________
 //Module Exports - access this file in server.js
